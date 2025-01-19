@@ -1,20 +1,11 @@
 import React from 'react';
-import { Grid, Box, FormControl, InputLabel, Select, MenuItem, Typography } from '@mui/material';
+import { Grid, Box } from '@mui/material';
 import { FormInput } from './FormInput';
 import * as options from '../utils/calculationOptions';
 
 // Helper function to determine which gender-specific label to use
 const getGenderLabel = (values, maleLabel, femaleLabel) => {
-  const isOwingPartner = values.calculationType === 'owe_partner';
   const isMale = values.gender === 'male';
-  
-  // For "What I Owe Partner":
-  // - If I'm male, show female options (what I owe her)
-  // - If I'm female, show male options (what I owe him)
-  
-  // For "What Partner Owes Me":
-  // - If I'm male, show female options (what she owes me)
-  // - If I'm female, show male options (what he owes me)
   
   // Always show opposite gender's options
   return isMale ? femaleLabel : maleLabel;

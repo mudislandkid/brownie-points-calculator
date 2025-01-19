@@ -254,19 +254,6 @@ export function PointsResult({ points, gender, calculationType }) {
   };
 
   const getComment = () => {
-    const absPoints = Math.abs(points);
-    let severity;
-    if (absPoints === 0) severity = 'free';
-    else if (absPoints < 10) severity = 'minimal';
-    else if (absPoints < 20) severity = 'veryLow';
-    else if (absPoints < 30) severity = 'low';
-    else if (absPoints < 40) severity = 'mediumLow';
-    else if (absPoints < 50) severity = 'medium';
-    else if (absPoints < 60) severity = 'mediumHigh';
-    else if (absPoints < 70) severity = 'high';
-    else if (absPoints < 85) severity = 'veryHigh';
-    else severity = 'extreme';
-
     const values = {
       gender,
       calculationType,

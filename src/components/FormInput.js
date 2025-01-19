@@ -1,15 +1,14 @@
 import React from 'react';
 import { 
-  Select, 
-  MenuItem, 
   Slider, 
   Checkbox, 
   FormControlLabel, 
   TextField,
   Box,
   FormControl,
-  InputLabel,
-  FormHelperText
+  FormHelperText,
+  Select,
+  MenuItem
 } from '@mui/material';
 import { FormField } from './FormField';
 

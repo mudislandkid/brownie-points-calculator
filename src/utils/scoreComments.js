@@ -1,4 +1,4 @@
-import * as options from './calculationOptions';
+// import * as options from './calculationOptions';
 
 const getComment = (values, points) => {
   const isOwingPartner = values.calculationType === 'owe_partner';
